@@ -7,7 +7,7 @@ const DisplayList = ({ todos, onDelete, onToggle }) => {
       {todos.map(todo => (
         <li
           key={todo.id}
-          className="todo-item"
+          className={`todo-item ${todo.completed ? 'todo-completed' : ''}`}
         >
           <div className="todo-content">
             <input

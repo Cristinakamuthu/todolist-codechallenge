@@ -26,14 +26,14 @@ const App = () => {
     ));
   };
 
-  const handleAddTodo = (newTodo) => {
-    if (newTodo.trim()) {
-      const newTodoItem = {
+  const handleAddTodo = (title) => {
+    if (title.trim()) {
+      const newTodo = {
         id: Date.now(),
-        title: newTodo,
+        title,
         completed: false
       };
-      setTodos([newTodoItem, ...todos]);
+      setTodos([newTodo, ...todos]);
     }
   };
 
