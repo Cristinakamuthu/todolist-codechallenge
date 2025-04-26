@@ -15,10 +15,10 @@ const AddTodo = ({ onAddTodo }) => {
         type="text"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
-        placeholder="Add a new todo..."
+        placeholder="Add a new todo🙌"
         className="add-todo-input"
       />
-      <button type="submit" className="add-todo-button">Add</button>
+      <button type="submit" className="add-todo-button"> + </button>
     </form>
   );
 };

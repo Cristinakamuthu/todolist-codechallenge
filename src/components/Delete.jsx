@@ -6,7 +6,7 @@ const Delete = ({ id, onDelete }) => {
       onClick={() => onDelete(id)}
       className="delete-button"
     >
-      Delete
+      🗑️
     </button>
   );
 };

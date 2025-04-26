@@ -13,7 +13,7 @@ const App = () => {
     fetch('https://jsonplaceholder.typicode.com/todos?_limit=10')
       .then(res => res.json())
       .then(data => setTodos(data))
-      .catch(err => console.error(err));
+      .catch(err => console.log(err));
   }, []);
 
   const handleDelete = (id) => {
